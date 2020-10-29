@@ -1,6 +1,6 @@
-// #include <graphics.h>
-// #include <stdlib.h>
-// #include <math.h>
+#include <graphics.h>
+#include <stdlib.h>
+#include <math.h>
 #include "complex.h"
 
 void juliaSet(int largura, int altura, complex c, double raio, int iter){
@@ -11,7 +11,7 @@ void juliaSet(int largura, int altura, complex c, double raio, int iter){
         for(y=0;y<altura;y++){
             z0 = mapear(largura, altura, raio, x ,y);
             for(i = 1;i <= iter;i++){
-                z1 = add(sqr(z0), c);
+                z1 = adicao(sqr(z0), c);
                 if(mod(z1)>raio){
                     putpixel(x,y, i%15+1);
                 }
