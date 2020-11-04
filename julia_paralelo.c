@@ -11,7 +11,7 @@
 
 void array_to_file(int* array)
 {
-	FILE* out = fopen("result.txt", "w");
+	FILE* out = fopen("result_paralelo.txt", "w");
 
 	int i = 0;
 	for (i = 0; i < ROWS * COLUMNS; i++) {
